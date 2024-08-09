@@ -1,0 +1,112 @@
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: Roboto;
+  color: hsl(234, 29%, 20%);
+}
+img {
+  vertical-align: middle;
+}
+
+.container {
+  padding: 0px;
+  margin: 0px;
+  max-width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 40px;
+  margin: 0px;
+  padding: 0px;
+}
+h2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  padding: 2rem;
+  height: 100%;
+  margin: 0px;
+}
+ul {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  list-style: none; /* Remove default bullets */
+  padding: 0px;
+  font-size: 15px;
+}
+
+ul li {
+  background: url("assets/images/icon-list.svg") no-repeat;
+  padding-left: 1.75rem;
+  background-size: 16px 16px; /* Adjust based on the size of your icon */
+  margin-top: 10px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  font-size: 10px;
+  font-weight: 800;
+}
+#form input,
+#subscribe,
+#dismiss {
+  padding: 1rem;
+  margin: 0px;
+  border-radius: 0.25rem;
+}
+#form input {
+  width: auto;
+  border: solid grey 1px;
+  margin-bottom: 20px;
+}
+#subscribe,
+#dismiss {
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  margin-top: 10px + auto;
+  cursor: pointer;
+}
+#subscribe:hover,
+#dismiss:hover {
+  background: linear-gradient(0.25turn, rgb(255, 83, 121), rgb(254, 106, 61));
+  box-shadow: 0 5px 30px hsl(4, 100%, 67%);
+}
+@media only screen and (min-width: 770px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+    align-items: center;
+  }
+  .container {
+    background-color: white;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 865px;
+    height: auto;
+    padding: 1.75rem;
+    border-radius: 1.75rem;
+  }
+  h1{
+    font-size: 54px;
+   margin-bottom: 20px;
+  }
+ 
+
+}
