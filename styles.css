@@ -31,6 +31,7 @@ h2 {
   padding: 0px;
   font-size: 16px;
   font-weight: 400;
+  margin-top: 1rem;
 }
 .text-content {
   display: flex;
@@ -72,7 +73,7 @@ ul li {
 #form input {
   width: auto;
   border: solid grey 1px;
-  margin-bottom: 20px;
+ 
 }
 #subscribe,
 #dismiss {
@@ -80,13 +81,16 @@ ul li {
   color: white;
   border: none;
   background-color: hsl(234, 29%, 20%);
-  margin-top: 10px + auto;
   cursor: pointer;
+  margin-top: 2rem;
 }
 #subscribe:hover,
 #dismiss:hover {
   background: linear-gradient(0.25turn, rgb(255, 83, 121), rgb(254, 106, 61));
   box-shadow: 0 5px 30px hsl(4, 100%, 67%);
+}
+#success-text{
+  padding-top: 10rem;
 }
 @media only screen and (min-width: 770px) {
   body {
@@ -104,9 +108,21 @@ ul li {
     border-radius: 1.75rem;
   }
   h1{
-    font-size: 54px;
+    font-size: 48px;
+    line-height: 48px;
    margin-bottom: 20px;
   }
+ #success{
+  max-width: 400px;
+ }
+ #success-text{
+  padding: 2rem;
+ }
+ #success-text h2{
+  
+ }
  
-
+ #dismiss{
+  margin-top: 2rem;
+ }
 }
